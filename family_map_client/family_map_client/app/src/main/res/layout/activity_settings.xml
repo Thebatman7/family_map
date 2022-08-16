@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/lifeStory"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lifeStory"/>
+        <TextView
+            android:id="@+id/lifeStoryBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/lifeStory"
+            android:text="@string/lifeStoryBottom"
+            android:textColor="@color/text_color"/>
+        <Switch
+            android:id="@+id/lifeStorySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:showText="true"
+            android:textOn="1"
+            android:textOff="0"
+            android:thumbTint="@color/blue"
+            android:trackTint="@color/switch_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/lifeStoryBottom"
+            android:background="@color/switch_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/firstRow"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/familyTree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/familyTree" />
+
+        <TextView
+            android:id="@+id/familyTreeBottom"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/familyTree"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/familyTreeBottom"
+            android:textColor="@color/text_color"/>
+
+        <Switch
+            android:id="@+id/familyTreeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:showText="true"
+            android:textOn="1"
+            android:textOff="0"
+            android:thumbTint="@color/blue"
+            android:trackTint="@color/switch_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/familyTreeBottom"
+            android:background="@color/switch_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thirdRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/secondRelativeLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/spouseLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/spouseLines" />
+        <TextView
+            android:id="@+id/spouseLinesBottom"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/spouseLines"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/spouseLinesBottom"
+            android:textColor="@color/text_color"/>
+        <Switch
+            android:id="@+id/spouseLinesSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:showText="true"
+            android:textOn="1"
+            android:textOff="0"
+            android:thumbTint="@color/blue"
+            android:trackTint="@color/switch_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/spouseLinesBottom"
+            android:background="@color/switch_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fourthRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/thirdRelativeLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fatherSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/fatherSide" />
+
+        <TextView
+            android:id="@+id/fatherSideBottom"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/fatherSide"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/fatherSideBottom"
+            android:textColor="@color/text_color"/>
+
+        <Switch
+            android:id="@+id/fatherSideSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:showText="true"
+            android:textOn="1"
+            android:textOff="0"
+            android:thumbTint="@color/blue"
+            android:trackTint="@color/switch_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/fatherSideBottom"
+            android:background="@color/switch_color"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fifthRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/fourthRelativeLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/motherSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/motherSide" />
+
+        <TextView
+            android:id="@+id/motherSideBottom"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/motherSide"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/motherSideBottom"
+            android:textColor="@color/text_color"/>
+
+        <Switch
+            android:id="@+id/motherSideSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:showText="true"
+            android:textOn="1"
+            android:textOff="0"
+            android:thumbTint="@color/blue"
+            android:trackTint="@color/switch_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/motherSideBottom"
+            android:background="@color/switch_color"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/sixthRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/fifthRelativeLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/maleEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/maleEvents" />
+
+        <TextView
+            android:id="@+id/maleEventBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maleEvent"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/genderBottom"
+            android:textColor="@color/text_color"/>
+        <Switch
+            android:id="@+id/maleEventSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:showText="true"
+            android:textOn="1"
+            android:textOff="0"
+            android:thumbTint="@color/blue"
+            android:trackTint="@color/switch_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/maleEventBottom"
+            android:background="@color/switch_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seventhRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/sixthRelativeLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/femaleEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/femaleEvents"/>
+        <TextView
+            android:id="@+id/femaleEventBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/femaleEvent"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/genderBottom"
+            android:textColor="@color/text_color"/>
+
+        <Switch
+            android:id="@+id/femaleEventSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:showText="true"
+            android:textOn="1"
+            android:textOff="0"
+            android:checked="true"
+            android:thumbTint="@color/blue"
+            android:trackTint="@color/switch_color"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/femaleEventBottom"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/switch_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logoutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/seventhRelativeLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/logout" />
+        <TextView
+            android:id="@+id/logoutBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logout"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/logoutBottom"
+            android:textColor="@color/text_color"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/logoutBottom"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/switch_color"/>
+    </RelativeLayout>
+</RelativeLayout>

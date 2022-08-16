@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/eventImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:paddingTop="7dp"
+        android:gravity="center"
+        android:contentDescription="@null"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_toRightOf="@+id/eventImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventText"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="12dp"
+            android:layout_height="wrap_content"
+            android:text="@string/eventInfo"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/eventPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/eventPersonName"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/dark_blue"/>
+</RelativeLayout>

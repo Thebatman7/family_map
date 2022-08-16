@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--we place a fragment in an activity (screen) we assign it a name and width and height
+    In this case, this fragment is a holder foe one fragments (map fragment) which is called when we
+    call the event activity-->
+    <FrameLayout
+        android:id="@+id/fragmentMapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
